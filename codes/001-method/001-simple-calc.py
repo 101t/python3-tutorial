@@ -1,4 +1,6 @@
-
+"""
+Understanding Method usage
+"""
 
 def add(a, b):
 	return a + b
