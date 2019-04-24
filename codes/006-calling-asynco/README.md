@@ -3,7 +3,7 @@
 1. Installing Project Unix (Linux/MacOS)
 
 ```
-cd getgithubdata/
+cd 006-calling-asynco/
 
 virtualenv -p python3 env
 
@@ -15,7 +15,7 @@ python main.py
 2. Installing Project Windows
 
 ```
-cd \getgithubdata
+cd \006-calling-asynco
 
 virtualenv env
 
