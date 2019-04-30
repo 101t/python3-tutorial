@@ -28,8 +28,8 @@ It is a single expression anonymous function often used as inline function.
 
 ### Q6. Explain how can you make a Python Script executable on Unix?
 To make a Python Script executable on Unix, you have two things to do:
-* Script file's mode must be executable and
-* The first line must begin with # ( #!/usr/local/bin/python)
+* Script file's mode must be executable by converting file mode `chmod +x filename.py`.
+* The first line must begin with # like `#!/usr/bin/python`.
 
 ### Q7. how to extract distinct list from  [1, 2, 2, 4, 9, 9] ?
 ```python
