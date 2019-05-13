@@ -1,14 +1,16 @@
 from django.shortcuts import render, HttpResponse
 
+from .models import Post
+
 import json
-# Create your views here.
 
-def news_view(request):
-	return HttpResponse("<h3>Hello News</h3>")
+def home_view(request):
+	posts = Post.objects.filter(is_active=True)
+	return render(request, "home.html", dict(posts=posts))
 
-def news_api(request):
+def sample_api(request):
 	dicts = {
-		"name": "Mohammed",
+		"name": "Jade",
 		"age": 24,
 	}
 	return HttpResponse(json.dumps(dicts), content_type="application/json", status=404)

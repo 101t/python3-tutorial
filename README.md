@@ -9,3 +9,7 @@ Python3 Tutorials Source Code
 1. Understanding Methods
 2. Understanding Classes
 3. Working on first CLI app
+4. Object Oriented Classes
+5. An Introduction to Flask Framework
+6. Working with Django Framework
+7. Understanding Threading in Python
