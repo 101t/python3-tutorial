@@ -1,9 +1,11 @@
 .wrapper{
-	min-height: calc(100vh - 172px);
+	min-height: calc(100vh - 156px);
 }
 
 .footer {
 	height: 100px;
 	width: 100%;
-	background-color:#999;
+	padding-top:34px;
+	color:#aaa;
+	background-color:#010e28;
 }

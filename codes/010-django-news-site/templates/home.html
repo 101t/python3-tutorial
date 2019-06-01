@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load i18n static %}
-{% block title %}Home Page{% endblock title %}
+{% block title %}{% trans "Home Page" %}{% endblock title %}
 {% block content %}
 <form action="">
 	<div class="form-group">
@@ -11,7 +11,7 @@
 	<h3>{{ post.title }}</h3>
 	<p>{{ post.body|truncatechars:200 }} <a href="{% url 'post_detail' post.slug %}">{% trans "View More" %}</a></p>
 {% empty %}
-	<p class="text-center my-3">There is no Post yet</p>
+	<p class="text-center my-3">{% trans "There is no Post yet" %}</p>
 {% endfor %}
 {% include "includes/paginate.html" with page_obj=posts %}
 {% endblock content %}
