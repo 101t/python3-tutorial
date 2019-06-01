@@ -13,3 +13,6 @@ Python3 Tutorials Source Code
 5. An Introduction to Flask Framework
 6. Working with Django Framework
 7. Understanding Threading in Python
+8. Understanding Socket Programming in Python
+9. Sending email
+10. Connecting to database
