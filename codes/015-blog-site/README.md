@@ -1,4 +1,4 @@
-# Django News Site
+# Django Blog Site
 
 ## Installation Application
 
@@ -11,13 +11,13 @@ sudo apt install python3-pip
 
 pip install virtualenv --user
 
-cd 010-django-news-site/
+cd 015-blog-site/
 
 virtualenv -p python3 env
 
 source env/bin/activate
 
-pip install -r requirements.pip
+pip install -r requirements.txt
 ```
 
 Installing Project on Windows, download python from `https://python.org`, then download **python3.X**
@@ -25,13 +25,13 @@ Installing Project on Windows, download python from `https://python.org`, then d
 ```bash
 python -m pip install virtualenv --user
 
-cd 010-django-news-site/
+cd 015-blog-site/
 
 virtualenv env
 
 env/Scripts/activate
 
-pip install -r requirements.pip
+pip install -r requirements.txt
 ```
 
 Migrate db and add superuser
