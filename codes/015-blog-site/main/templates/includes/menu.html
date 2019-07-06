@@ -1,0 +1,14 @@
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link {% if page == 'home' %}active{% endif %}" href="{% url 'home_view' %}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link {% if page == 'contact' %}active{% endif %}" href="{% url 'contact_view' %}">Contact Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link {% if page == 'about' %}active{% endif %}" href="{% url 'about_view' %}">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+  </li>
+</ul>

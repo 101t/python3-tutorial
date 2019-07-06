@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Contact Us{% endblock title %}
+{% block content %}
+{% include "includes/menu.html" with page="contact" %}
+<div class="container">
+	{% include "includes/messages.html" %}
+   <form method="post" action="">{% csrf_token %}
+	<div class="form-group">
+		<label>Email</label>
+		<input type="email" name="email" class="form-control" required>
+	</div>
+	<div class="form-group">
+		<label>Subject</label>
+		<input type="text" name="subject" class="form-control" required>
+	</div>
+	<div class="form-group">
+		<label>Message</label>
+		<textarea name="message" cols="3" class="form-control"></textarea>
+	</div>
+	<button class="btn btn-primary">Send Now</button>
+</form>
+</div>
+{% endblock content %}
+{% block extrajs %}
+<script>
+var csrf = "{{ csrf_token }}";
+</script>
+{% endblock extrajs %}

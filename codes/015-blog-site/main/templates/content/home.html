@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+{% include "includes/menu.html" with page="home" %}
+<div class="container">
+    <h3>Welcome to Blog</h3>
+    <div class="card card-default">
+    	{% for article in articles %}
+    	<div class="card-body">
+    		<div class="card-title">{{ article.title|truncatechars:200 }} <a href="{% url 'article_detail' article.slug %}">More</a></div>
+    		<div class="card-subtitle mb-2 text-muted">
+    			<small>
+    			<span class="badge badge-primary" title="{{ article.user.get_full_name }}">{{ article.user.first_name }} {{ article.user.last_name|make_list|first }}.</span>	
+    			<span class="badge badge-secondary" title="{{ article.created }}">{{ article.created|timesince }}</span>
+    			{% for tag in article.tags.all %}
+    				{{ tag.name }}{% if not forloop.last %}, {% endif %}
+    			{% endfor %}
+    			</small>
+    		</div>
+    	</div>
+    	{% empty %}
+    	<div class="card-body text-center">
+    		There is no article yet...
+    	</div>
+    	{% endfor %}
+    </div>
+</div>
+{% endblock content %}

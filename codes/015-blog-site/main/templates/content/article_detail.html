@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }}{% endblock title %}
+{% block content %}
+{% include "includes/menu.html" %}
+<div class="container">
+    <div class="card card-default">
+    	<div class="card-body">
+    		<h3 class="card-title">{{ article.title }}</h3>
+    		<div class="card-subtitle mb-3">
+    			<small>
+    			{{ article.user.get_full_name }} - {{ article.created|timesince }}
+    			</small>
+    		</div>
+    		{{ article.body }}
+    		<br>
+    		{% for tag in article.tags.all %}
+    			<div class="badge badge-secondary">{{ tag.name }}</div>
+    		{% endfor %}
+    	</div>
+    </div>
+</div>
+{% endblock content %}
