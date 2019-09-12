@@ -7,7 +7,7 @@ Make sure `virtualenv` installed on your computer by:
 Installing Project on Unix (Linux/MacOS)
 
 ```bash
-sudo apt install python3-pip
+sudo apt install python3-pip python3-dev
 
 pip install virtualenv --user
 

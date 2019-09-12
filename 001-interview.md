@@ -1,4 +1,4 @@
-# An Interview Questions
+# An Interview Questions for Python Junior/Senior Developer
 
 ### Q1. What is the difference between list and tuples (Say two difference)?
 | List 								 		| Tuples 															 |
