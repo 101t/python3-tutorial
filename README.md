@@ -16,4 +16,4 @@ Python3 Tutorials Source Code
 8. Understanding Socket Programming in Python
 9. Sending email
 10. Connecting to database
-11. Make you blog site with Django and theming admin panel
+11. Make your own blog site with Django, also theming django admin panel
