@@ -2,4 +2,4 @@ Django==2.2.10
 django-autoslug==1.9.4
 django-jet==1.0.8
 pytz==2019.1
-sqlparse==0.3.0
+sqlparse==0.4.4
